@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy: OMR Minecraft Server Backup</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1.25rem; }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .sub { opacity: 0.75; margin-top: 0; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy: OMR Minecraft Server Backup</h1>
+<p class="sub">Effective 25 November 2026</p>
+
+<h2>Who runs this app</h2>
+<p>OMR Minecraft Server Backup is a private backup tool run by the operator of the Orbiting Meadows (OMR) Minecraft server. It is not offered to the public. The only Google Account it connects to is the operator's own.</p>
+
+<h2>Google user data the app accesses</h2>
+<ul>
+  <li><strong>Google Drive, through the <code>drive.file</code> scope only.</strong> This lets the app see and change only the files and folders it created. It cannot see, open or change any other file in the Drive.</li>
+  <li><strong>Drive storage figures</strong> (total and used space), read before uploads.</li>
+  <li><strong>The connected account's email address</strong>, read once when access is granted, to confirm which account was connected.</li>
+</ul>
+
+<h2>How the app uses that data</h2>
+<ul>
+  <li>It creates one folder for backups and uploads compressed backups of the server's files into it, checking each upload against its checksum.</li>
+  <li>It lists the files in that folder and permanently deletes older backups on the retention schedule below. It deletes only backups it uploaded.</li>
+  <li>It uses the storage figures only to check that a backup fits and to warn the operator when space is low.</li>
+</ul>
+
+<h2>What the backups contain</h2>
+<p>Each backup is a copy of the server's own files: world data, configuration, plugin data and server logs. These can include Minecraft player information such as usernames, player IDs (UUIDs), in-game data, chat and command logs, and connection IP addresses. Backups are stored only in the operator's private Google Drive and are not shared.</p>
+
+<h2>Storage and security</h2>
+<ul>
+  <li>The app keeps a Google refresh token on the server computer, encrypted with Windows Data Protection so that only the operator's Windows account on that computer can use it. Short-lived access tokens are never saved.</li>
+  <li>Credentials are stored outside the server folder, so they are never included in a backup.</li>
+  <li>The app also keeps, on the server computer: the backup folder's Drive ID, the latest storage reading, the connected account's email address, and progress details used to resume an interrupted upload.</li>
+</ul>
+
+<h2>Retention</h2>
+<p>Backups less than 7 days old are all kept. Older backups are thinned: one per 12 hours up to 14 days old, one per day up to 60 days, one per week up to 182 days, and one per two weeks after that. The operator can delete any backup at any time.</p>
+
+<h2>Sharing</h2>
+<p>The app does not sell, share or transfer Google user data to anyone. It shows no ads, runs no analytics, and does not use the data to train or improve AI or machine-learning models. No AI agent accesses Google data through this app.</p>
+<p>OMR Minecraft Server Backup's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Removing access</h2>
+<p>Access can be removed at any time from the Google Account's <a href="https://myaccount.google.com/connections">third-party connections</a> page. Removing it stops all uploads and deletions; backups already in Drive stay there until deleted.</p>
+
+<h2>Changes</h2>
+<p>Changes to this policy are posted on this page with a new effective date.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:atomfitz@gmail.com">atomfitz@gmail.com</a></p>
+
+<p><a href="/">Home</a></p>
+</body>
+</html>
